@@ -318,9 +318,12 @@ input:checked + label > .knob > i:before {
 }
 
 .result-Message,
-.text-center,
 .Message {
   font-size: 1.5rem;
+}
+
+.text-center {
+  font-size: 1.2rem;
 }
 
 #label-container {
@@ -342,4 +345,9 @@ input:checked + label > .knob > i:before {
   font-family: fontello;
   font-size: 30px;
   color: #a1c6dd;
+}
+
+.footer {
+  background-color: initial;
+  color: initial;
 }
