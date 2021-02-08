@@ -403,6 +403,6 @@ input:checked + label > .knob > i:before {
 }
 
 .coupang {
-  width: 680px;
+  width: 340px;
   margin: 0 auto;
 }
