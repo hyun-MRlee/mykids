@@ -24,7 +24,8 @@
     <meta property="og:image" content="https://mykids.netlify.app/kids.jpg">
     <meta name="description" content="재미로 보는 미래 나의 2세 성별은? 아들과 딸이 있는 대표 연예인의 얼굴 사진 데이터로 학습한 인공지능이 나의 얼굴로 2세를 알려드립니다.">
     <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-601cd5e0178db9e1"></script>
-    <script data-ad-client="ca-pub-4146837305824638" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script data-ad-client="ca-pub-4146837305824638" async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 </head>
 
 <body>
@@ -54,7 +55,8 @@
                         <a class="nav-link" href="#">고민 중...</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="https://www.youtube.com/channel/UCQNE2JmbasNYbjGAcuBiRRg">조코딩 유튜브 채널</a>
+                        <a class="nav-link" href="https://www.youtube.com/channel/UCQNE2JmbasNYbjGAcuBiRRg">조코딩 유튜브
+                            채널</a>
                     </li>
                 </ul>
             </div>
@@ -72,7 +74,7 @@
     </section>
     <br>
     <h3 class="pb-2 d-flex justify-content-center">나의 성별은?</h3>
-    
+
     <section class="d-flex justify-content-center">
         <p class="d-flex align-items-center pr-3 male"></p>
         <div>
@@ -120,9 +122,15 @@
     </div>
     <br>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
 
@@ -138,7 +146,7 @@
                     $('.image-title').html(input.files[0].name);
                 };
                 reader.readAsDataURL(input.files[0]);
-                init().then(function() {
+                init().then(function () {
                     predict();
                     $('#loading').hide();
                 });
@@ -218,7 +226,7 @@
             var subtitle = "<div class='" + prediction[0].className + "-title'>" + resulS + "</div>"
             var kidSunDau = kids
             const classPrediction = kidSunDau + " " + (prediction[0].probability.toFixed(2) * 100) + "% 의 확률로";
-            
+
             $('.Message').html(title);
             $('.result-Message').html(subtitle);
             labelContainer.childNodes[0].innerHTML = classPrediction;
@@ -230,7 +238,7 @@
             // }
         }
     </script>
-     <script>
+    <script>
         function gaReload() {
             window.location.reload();
         }   
@@ -272,7 +280,7 @@
         $('#appModal').modal();
     </script>
     <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
-    
+
     <div class="mt-5 ad-banner1">
         <ins class="kakao_ad_area" style="display:none;" data-ad-unit="DAN-HHkKXXUErfZ9MHtM" data-ad-width="320"
             data-ad-height="100"></ins>
@@ -288,6 +296,10 @@
             data-ad-height="100"></ins>
     </div>
     <br>
+    <script src="https://ads-partners.coupang.com/g.js"></script>
+    <script>
+        new PartnersCoupang.G({ "id": 438175, "template": "carousel", "trackingCode": "AF7854434", "width": "680", "height": "140" });
+    </script>
     <footer class="footer pt-5 container d-flex justify-content-center">
         <p>2021 나의 Series 1ST.</p>
     </footer>
