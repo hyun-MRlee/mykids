@@ -399,5 +399,6 @@ input:checked + label > .knob > i:before {
 }
 
 .coupang {
+  width: 680px;
   margin: 0 auto;
 }
