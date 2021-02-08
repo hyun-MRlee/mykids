@@ -315,7 +315,9 @@ input:checked + label > .knob > i:before {
 }
 
 .result-Message,
-.Message {
+.Message,
+.advice-Message,
+.fun-Message {
   font-size: 1.5rem;
 }
 
