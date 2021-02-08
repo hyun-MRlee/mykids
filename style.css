@@ -358,7 +358,7 @@ input:checked + label > .knob > i:before {
   top: 0px;
   opacity: 0;
   width: 100%;
-  /* height: 100%; */
+  height: 100%;
   transition: 0.5s transform;
   transform: translateY(0px);
   margin-top: -84px;
