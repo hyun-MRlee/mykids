@@ -397,3 +397,7 @@ input:checked + label > .knob > i:before {
   opacity: 1;
   transform: translateY(84px);
 }
+
+.coupang {
+  margin: 0 auto;
+}
