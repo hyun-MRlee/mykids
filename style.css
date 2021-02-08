@@ -78,7 +78,8 @@ body {
   border: 1.5px dashed #ffffff;
 }
   
-.image-title-wrap {
+.image-title-wrap,
+.how-many-kids {
   padding: 0 15px 15px 15px;
   color: #222;
 }
