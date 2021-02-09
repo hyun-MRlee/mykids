@@ -257,41 +257,41 @@
         }   
     </script>
 
-<script>
-    // 상단 광고 js
-    const adUpper = document.querySelector(".ad__upper");
-    const adUpperBtn = document.querySelector(".ad__upper__hide__btn");
+    <script>
+        // 상단 광고 js
+        const adUpper = document.querySelector(".ad__upper");
+        const adUpperBtn = document.querySelector(".ad__upper__hide__btn");
 
-    function handleAdUpper() {
-    if (adUpper.classList[2] === undefined) {
-        adUpper.classList.add("snackbar__anim__up");
-    } else if (adUpper.classList[2] === "snackbar__anim__up") {
-        adUpper.classList.remove("snackbar__anim__up");
-    }
-    }
-    if (adUpper) {
-    adUpperBtn.addEventListener("click", handleAdUpper);
-    setTimeout(function () {
-        adUpper.classList.add("snackbar__anim__result");
-    }, 1000);
-    }
-    function iosApp() {
-        document.getElementById("addThis").style.display="none";
-        document.getElementById("disqus_thread").style.display="none";
-        var kakao = document.getElementsByClassName("kakao_ad_area");
-        for (var i = 0; i < kakao.length; i++) {
-          if(kakao[i]) {
-              kakao[i].style.display="none";
-          }
+        function handleAdUpper() {
+            if (adUpper.classList[2] === undefined) {
+                adUpper.classList.add("snackbar__anim__up");
+            } else if (adUpper.classList[2] === "snackbar__anim__up") {
+                adUpper.classList.remove("snackbar__anim__up");
+            }
         }
-        document.getElementById("yotube-top-link").style.display="none";
-        document.getElementById("yotube-mid-link").style.display="none";
-        document.getElementById("yotube-bottom-link").remove();
-        document.getElementById("moreInfo").remove();
-        document.getElementById("goToBlog").remove();
-    }
-    $('#appModal').modal();
-</script>
+        if (adUpper) {
+            adUpperBtn.addEventListener("click", handleAdUpper);
+            setTimeout(function () {
+                adUpper.classList.add("snackbar__anim__result");
+            }, 1000);
+        }
+        // function iosApp() {
+        //     document.getElementById("addThis").style.display = "none";
+        //     document.getElementById("disqus_thread").style.display = "none";
+        //     var kakao = document.getElementsByClassName("kakao_ad_area");
+        //     for (var i = 0; i < kakao.length; i++) {
+        //         if (kakao[i]) {
+        //             kakao[i].style.display = "none";
+        //         }
+        //     }
+        //     document.getElementById("yotube-top-link").style.display = "none";
+        //     document.getElementById("yotube-mid-link").style.display = "none";
+        //     document.getElementById("yotube-bottom-link").remove();
+        //     document.getElementById("moreInfo").remove();
+        //     document.getElementById("goToBlog").remove();
+        // }
+        // $('#appModal').modal();
+    </script>
 
     <div id="visits"></div>
 
