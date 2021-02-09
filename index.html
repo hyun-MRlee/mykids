@@ -57,6 +57,7 @@
     <setion class="section">
         <h1 class="title">재미로 보는 나의 2세는?</h1>
         <h2 class="subtitle">과연 나의 2세는 딸? 아들?</h2>
+        <div id="visits"></div>
     </setion>
     <section class="youtube">
         <div class="container mt-5 youtube-cover d-flex flex-row-reverse">
@@ -113,11 +114,6 @@
                     <span class="try-again-text">재밌으니 또 해보기</span>
                 </button>
             </div>
-            <!-- <div class="pt-3 how-many-kids">
-                <button type="button p-2" class="try-again-btn" onclick="howManyKids()">
-                    <span class="try-again-text">재미로 보는 나의 자녀 수 보러가기</span>
-                </button>
-            </div> -->
         </div>
     </div>
     <br>
@@ -138,6 +134,7 @@
         function readURL(input) {
             if (input.files && input.files[0]) {
                 var reader = new FileReader();
+                let count = 0;
                 reader.onload = function (e) {
                     $('.image-upload-wrap').hide();
                     $('#loading').show();
@@ -234,7 +231,7 @@
             var subtitle = "<div class='" + prediction[0].className + "-title'>" + resulS + "</div>"
             var subadvice = "<div class='" + prediction[0].className + "-title'>" + advice + "</div>"
             var subfun = "<div class='" + prediction[0].className + "-title'>" + fun + "</div>"
-            var kidSunDau = kids
+            var kidSunDau = kids;
             const classPrediction = kidSunDau + " " + (prediction[0].probability.toFixed(2) * 100) + "% 의 확률로";
 
             $('.Message').html(title);
@@ -256,11 +253,11 @@
         }   
     </script>
 
-    <script>
+    <!-- <script>
         function howManyKids() {
             location.href="#";
         }   
-    </script>
+    </script> -->
 
     <!-- <script>
         // 상단 광고 js
@@ -302,8 +299,8 @@
         <ins class="kakao_ad_area" style="display:none;" data-ad-unit="DAN-JPO819dEURllWYYJ" data-ad-width="320"
             data-ad-height="50"></ins>
         <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
-        <!-- <div class="ad__upper__line"></div> -->
-        <!-- <div class="ad__upper__hide__btn">x</div> -->
+        <div class="ad__upper__line"></div>
+        <div class="ad__upper__hide__btn">x</div>
     </div>
 
     <div class="mt-3 ad-banner1">
@@ -323,13 +320,23 @@
             data-ad-height="100"></ins>
         <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
     </div>
+
     <br>
+    
     <div class="coupang">
         <script src="https://ads-partners.coupang.com/g.js"></script>
         <script>
-            new PartnersCoupang.G({"id":438175,"template":"carousel","trackingCode":"AF7854434","width":"340","height":"140"});
+            new PartnersCoupang.G({ "id": 438175, "template": "carousel", "trackingCode": "AF7854434", "width": "340", "height": "140" });
         </script>
-    </div>
+    <br>
+
+    <script>
+        function cb(response) {
+            document.getElementById('visits').innerText = response.value + "번째 방문자 입니다";
+        }
+    </script>
+    <script async src="https://api.countapi.xyz/hit/mykids.netlify.app/visits?callback=cb"></script>
+
     <footer class="footer pt-5 container d-flex justify-content-center">
         <p>2021 나의 Series 1ST.</p>
     </footer>

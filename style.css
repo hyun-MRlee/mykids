@@ -78,8 +78,7 @@ body {
   border: 1.5px dashed #ffffff;
 }
   
-.image-title-wrap,
-.how-many-kids {
+.image-title-wrap {
   padding: 0 15px 15px 15px;
   color: #222;
 }
@@ -232,6 +231,11 @@ body {
 .ad-banner3,
 .ad__upper {
   width: 320px;
+  margin: 0 auto;
+}
+
+.coupang {
+  width: 340px;
   margin: 0 auto;
 }
 
@@ -402,7 +406,7 @@ input:checked + label > .knob > i:before {
   transform: translateY(84px);
 }
 
-.coupang {
-  width: 340px;
-  margin: 0 auto;
+#visits {
+  font-size: 1rem;
+  text-align: center;
 }
