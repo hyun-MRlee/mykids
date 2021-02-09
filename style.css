@@ -407,6 +407,6 @@ input:checked + label > .knob > i:before {
 }
 
 #visits {
-  font-size: 1rem;
   text-align: center;
+  color: rgb(219, 23, 187);
 }

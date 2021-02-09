@@ -57,7 +57,6 @@
     <setion class="section">
         <h1 class="title">재미로 보는 나의 2세는?</h1>
         <h2 class="subtitle">과연 나의 2세는 딸? 아들?</h2>
-        <div id="visits"></div>
     </setion>
     <section class="youtube">
         <div class="container mt-5 youtube-cover d-flex flex-row-reverse">
@@ -295,6 +294,9 @@
         $('#appModal').modal();
     </script> -->
 
+    <div id="visits"></div>
+
+    <!--하단 카카오 배너 광고 -->
     <div class="mt-5 ad__upper">
         <ins class="kakao_ad_area" style="display:none;" data-ad-unit="DAN-JPO819dEURllWYYJ" data-ad-width="320"
             data-ad-height="50"></ins>
@@ -322,24 +324,26 @@
     </div>
 
     <br>
-    
+    <!--하단 쿠팡 배너 광고 -->
     <div class="coupang">
         <script src="https://ads-partners.coupang.com/g.js"></script>
         <script>
             new PartnersCoupang.G({ "id": 438175, "template": "carousel", "trackingCode": "AF7854434", "width": "340", "height": "140" });
         </script>
-    <br>
+    </div>
+        <br>
+        <!--방문자 카운터-->
+        <script>
+            function cb(response) {
+                document.getElementById('visits').innerText = "감사합니다! " + response.value + " 번째 방문자 입니다";
+            }
+        </script>
+        <script async src="https://api.countapi.xyz/hit/mykids.netlify.app/visits?callback=cb"></script>
 
-    <script>
-        function cb(response) {
-            document.getElementById('visits').innerText = response.value + "번째 방문자 입니다";
-        }
-    </script>
-    <script async src="https://api.countapi.xyz/hit/mykids.netlify.app/visits?callback=cb"></script>
-
-    <footer class="footer pt-5 container d-flex justify-content-center">
-        <p>2021 나의 Series 1ST.</p>
-    </footer>
+        <!--footer-->
+        <footer class="footer pt-5 container d-flex justify-content-center">
+            <p>2021 나의 Series 1ST.</p>
+        </footer>
 </body>
 <!-- Copyright (c) 2021 by Aaron Vanston (https://codepen.io/aaronvanston/pen/yNYOXR)
 
