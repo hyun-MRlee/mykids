@@ -366,7 +366,6 @@ input:checked + label > .knob > i:before {
   transition: 0.5s transform;
   transform: translateY(0px);
   margin-top: -84px;
-  margin: auto;
   z-index: 99;
   text-align: center;
 }
